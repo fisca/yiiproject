@@ -20,3 +20,21 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yiiproject/app/index.php?r=test/index
 ---
+2014/06/27 06:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hell".' in C:\xampp\htdocs\yiiproject\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('hell')
+#1 C:\xampp\htdocs\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiiproject\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiproject/app/index.php?r=hell
+---
+2014/06/27 06:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\yiiproject\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yiiproject\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\xampp\htdocs\yiiproject\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#3 C:\xampp\htdocs\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiproject\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiproject/app/index.php?r=hello
+---
